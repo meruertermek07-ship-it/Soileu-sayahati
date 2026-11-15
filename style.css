@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #eee7ff, #e2f7ff, #fff0f7);
+    min-height: 100vh;
+    color: #35265c;
+}
+
+.header {
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(120deg, #7856d8, #a66be8, #e18acb);
+    color: white;
+    border-radius: 0 0 35px 35px;
+    box-shadow: 0 5px 20px #8c65bd40;
+}
+
+.header h1 {
+    font-size: clamp(23px, 5vw, 38px);
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 92%;
+    margin: 35px auto;
+}
+
+section {
+    background: #ffffffd9;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px #7654a51a;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #6844b5;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.sound-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.sound-button {
+    border: none;
+    border-radius: 22px;
+    padding: 25px 10px;
+    background: linear-gradient(145deg, #e8dfff, #d8f5ff);
+    color: #6844b5;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px #7856d820;
+}
+
+.sound-button:hover {
+    transform: translateY(-6px);
+    background: linear-gradient(145deg, #d9c6ff, #c4edff);
+}
+
+.stage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.stage-button {
+    padding: 25px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #f0eaff;
+    color: #6844b5;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.stage-button:hover {
+    background: #dfd0ff;
+    transform: scale(1.03);
+}
+
+button {
+    font-family: inherit;
+}
+
+button:not(.sound-button):not(.stage-button) {
+    border: none;
+    background: #7956d6;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.2s;
+}
+
+button:not(.sound-button):not(.stage-button):hover {
+    background: #5e3db2;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.progress-box {
+    width: 100%;
+    height: 15px;
+    background: #e9e1f8;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #8b63e6, #ed85c4);
+    border-radius: 20px;
+    transition: width 0.4s;
+}
+
+#progressText {
+    text-align: right;
+    font-weight: 900;
+    color: #7956d6;
+    margin-top: 7px;
+}
+
+.task-card {
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #f8f3ff, #effaff);
+    border: 2px solid #e8dcff;
+}
+
+#taskNumber {
+    display: inline-block;
+    background: #e5d9ff;
+    color: #6844b5;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+#taskName {
+    font-size: 26px;
+}
+
+#taskGoal,
+#taskInstruction,
+#taskExample,
+#taskVisual,
+#taskCheck,
+#taskHint {
+    margin: 15px 0;
+    padding: 13px;
+    border-radius: 12px;
+    background: white;
+    line-height: 1.7;
+}
+
+#taskExample {
+    border-left: 5px solid #9b77e8;
+}
+
+#taskVisual {
+    background: #fff4fb;
+}
+
+#taskCheck {
+    background: #edfff5;
+}
+
+#taskHint {
+    background: #fff9e8;
+}
+
+#completeButton {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    font-size: 17px;
+    background: linear-gradient(90deg, #7956d6, #b56bdc);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#diplomaPage {
+    text-align: center;
+    padding: 60px 20px;
+    border: 5px double #d5a83e;
+}
+
+#diplomaPage h1 {
+    color: #c28c24;
+    font-size: clamp(25px, 5vw, 42px);
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .task-card {
+        padding: 20px 14px;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    .navigation button {
+        flex: 1;
+    }
+}
