@@ -16,12 +16,25 @@
     <main class="container">
 
         <section id="homePage">
-            <h2>Қош келдің, жас зерттеуші!</h2>
-            <p>Өзіңе қажетті дыбысты таңдап, қызықты тапсырмаларды орында.</p>
 
-            <div id="soundMenu" class="sound-grid"></div>
-        </section>
+    <div class="welcome-box">
+        <div class="welcome-icon">🌈</div>
 
+        <h2>Қош келдің, жас зерттеуші!</h2>
+
+        <p>
+            Сені қызықты әрі ғажайып сөйлеу әлемі күтеді!
+            10 дыбысты зерттеп, 400 тапсырманы орында.
+        </p>
+
+        <button class="start-button" onclick="startJourney()">
+            🚀 САЯХАТТЫ БАСТАУ
+        </button>
+    </div>
+
+    <div id="soundMenu" class="sound-grid hidden"></div>
+
+</section>
         <section id="stagePage" class="hidden">
             <button onclick="goHome()">← Басты бет</button>
             <h2 id="soundTitle"></h2>
