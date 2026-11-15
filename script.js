@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сөйлеу әлеміне саяхат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🌈 СӨЙЛЕУ ӘЛЕМІНЕ САЯХАТ</h1>
+        <p>Дислалияны түзетуге арналған интерактивті бағдарлама</p>
+    </header>
+
+    <main class="container">
+
+        <section id="homePage">
+            <h2>Қош келдің, жас зерттеуші!</h2>
+            <p>Өзіңе қажетті дыбысты таңдап, қызықты тапсырмаларды орында.</p>
+
+            <div id="soundMenu" class="sound-grid"></div>
+        </section>
+
+        <section id="stagePage" class="hidden">
+            <button onclick="goHome()">← Басты бет</button>
+            <h2 id="soundTitle"></h2>
+            <div id="stageMenu" class="stage-grid"></div>
+        </section>
+
+        <section id="taskPage" class="hidden">
+            <button onclick="goStages()">← Кезеңдерге оралу</button>
+
+            <h2 id="stageTitle"></h2>
+
+            <div class="progress-box">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0%</p>
+
+            <div class="task-card">
+                <span id="taskNumber"></span>
+                <h2 id="taskName"></h2>
+                <p id="taskGoal"></p>
+                <p id="taskInstruction"></p>
+                <div id="taskExample"></div>
+                <div id="taskVisual"></div>
+                <div id="taskCheck"></div>
+                <div id="taskHint"></div>
+
+                <button id="completeButton" onclick="completeTask()">
+                    Тапсырманы орындадым
+                </button>
+            </div>
+
+            <div class="navigation">
+                <button onclick="previousTask()">← Алдыңғы</button>
+                <button onclick="nextTask()">Келесі →</button>
+            </div>
+        </section>
+
+        <section id="diplomaPage" class="hidden">
+            <h1>🏆 ДЫБЫСТАР ШЕБЕРІ</h1>
+            <p>Құттықтаймыз! Сен барлық тапсырманы орындадың!</p>
+            <button onclick="goHome()">Басты бетке оралу</button>
+        </section>
+
+    </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
