@@ -254,3 +254,34 @@ button:not(.sound-button):not(.stage-button):hover {
         flex: 1;
     }
 }
+.welcome-box {
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.welcome-icon {
+    font-size: 75px;
+    margin-bottom: 15px;
+}
+
+.welcome-box h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+.start-button {
+    display: block;
+    margin: 25px auto !important;
+    padding: 18px 40px !important;
+    border-radius: 18px !important;
+    background: linear-gradient(90deg, #7956d6, #e18acb) !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    box-shadow: 0 7px 20px #7956d650;
+}
