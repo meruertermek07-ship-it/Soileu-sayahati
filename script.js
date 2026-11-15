@@ -18,7 +18,14 @@
         <section id="homePage">
             <h2>Қош келдің, жас зерттеуші!</h2>
             <p>Өзіңе қажетті дыбысты таңдап, қызықты тапсырмаларды орында.</p>
+function startJourney() {
+    document.getElementById("soundMenu").classList.remove("hidden");
 
+    document.getElementById("soundMenu").scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+}
             <div id="soundMenu" class="sound-grid"></div>
         </section>
 
